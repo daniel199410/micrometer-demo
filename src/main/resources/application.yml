@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: micrometer-demo
+management:
+  metrics:
+    export:
+      cloudwatch:
+        namespace: micrometer-app
+        batchSize: 10
