@@ -38,7 +38,7 @@ public class AppConfig {
         return new CloudWatchConfig() {
             private final Map<String, String> configuration = Map.of(
                 "cloudwatch.namespace", "micrometer-app",
-                "cloudwatch.step", Duration.ofMinutes(5).toString()
+                "cloudwatch.step", Duration.ofMinutes(1).toString()
             );
             @Override
             public String get(@NonNull String s) {
